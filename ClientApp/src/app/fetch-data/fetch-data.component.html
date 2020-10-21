@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Animal list</h1>
+
+<p *ngIf="!animals"><em>Loading...</em></p>
+
+<div *ngIf="animals">
+  <div *ngFor="let type of animalOptions">
+    <b>Animal type: {{ animalTypes[type] }}</b>
+    <table class='table table-striped' aria-labelledby="tableLabel">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>User name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let animal of animals">
+        <ng-container *ngIf="animal.type == type">
+          <td >{{ animal.name }}</td>
+          <td >{{ animal.userName }}</td>
+        </ng-container>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
