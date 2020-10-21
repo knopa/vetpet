@@ -19,8 +19,4 @@ export class FetchDataComponent {
       this.animals = result;
     }, error => console.error(error));
   }
-
-  filterUser(animal: Animal) {
-    return !user.age >= 18
-  }
 }
