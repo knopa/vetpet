@@ -13,7 +13,3 @@ Last name
 Media Interactiva employee: Yes/No
 
 Not implemented Update and Delete
-
-
-
-# Just lack of time
